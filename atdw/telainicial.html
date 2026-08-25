@@ -1,0 +1,64 @@
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <title> Produto 2 Irmãos </title>
+        <link rel="stylesheet" href="estiloso.css">
+
+    </head>
+    <body>
+        <h1 style="text-align: center;
+        font-family:Cambria;
+        height: 60px;
+        color:rgb(227, 212, 228) ;
+        margin-top: 20px;
+        "> 🙀  Estoque 2 Irmãos 🙀</h1>
+
+        <form method="post" action="produtos.php">
+
+
+            <div>
+
+            <fieldset style="box-shadow: rgba(224, 194, 194, 0.35) 0px 5px 15px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 150px;
+            background-color:rgba(71, 62, 75, 0.986);
+            font-family: 'Segoe UI';
+            ">
+
+            <h2 style="font-family:'Arial';
+            text-align: center;
+            color: rgb(250, 250, 250);"> Cadastro de Produtos 👍 </h2> <br>
+
+            
+            <label> Nome do Produto: </label> <br>
+            <input type="text" placeholder="''goiaba''" name="nome_produto" required>
+            
+            <div class="campo">
+
+            <label> Categoria: </label>
+            <input type="text" placeholder="''alimento''" name="categoria" required>
+            
+            <label> Valor Compra: </label>
+            <input type="number" placeholder="0,00" name="valor_compra" >
+            
+            <label> Valor Venda: </label>
+            <input type="number" placeholder="0,00" name="valor_venda">
+
+            <label> Qtd. Estoque: </label>
+            <input type="number" placeholder="0" name="qtd_estoque"><br>
+
+            </div>
+    
+            <input type="submit" value="Cadastrar produto" style="cursor: pointer;"> 
+            <input type="submit" value="Vender produto" style="cursor: pointer;">
+
+            
+            </div>
+            
+             </fieldset>
+        </form>
+    </body>
+</html>
