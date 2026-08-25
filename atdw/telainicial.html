@@ -8,57 +8,81 @@
     </head>
     <body>
         <h1 style="text-align: center;
-        font-family:Cambria;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         height: 60px;
-        color:rgb(227, 212, 228) ;
+        color:rgb(31, 28, 30) ;
         margin-top: 20px;
         "> 🙀  Estoque 2 Irmãos 🙀</h1>
 
         <form method="post" action="produtos.php">
 
+            <fieldset class="card">
+                <h2 class="cont_title"> Cadastro de Produtos 👍 </h2> 
 
-            <div>
+            <div class="form-grid">
 
-            <fieldset style="box-shadow: rgba(224, 194, 194, 0.35) 0px 5px 15px;
-            margin-top: 100px;
-            margin-bottom: 100px;
-            margin-right: 150px;
-            margin-left: 150px;
-            background-color:rgba(71, 62, 75, 0.986);
-            font-family: 'Segoe UI';
-            ">
+        
+                <div class="campo">
+                    <label> Nome do Produto: </label>
+                    <input type="text" placeholder="''goiaba''" name="nome_produto" required>
+                </div>  
+            
+                <div class="campo">
+                    <label> Categoria: </label>
+                    <select name="categoria" required> 
+                    <option value="" disabled selected> Selecione uma categoria...</option>
+                    <option value="alimento"> Alimento</option>
+                    <option value="acessorio"> Acessório</option>
+                    <option value="eletronicos"> Eletronicos</option>
+                    <option value="roupas"> Roupas</option>
+                    <option value="outros"> Outros</option>
+                    </select>
+                </div>
 
-            <h2 style="font-family:'Arial';
-            text-align: center;
-            color: rgb(250, 250, 250);"> Cadastro de Produtos 👍 </h2> <br>
+                <div class="campo">
+                    <label> Valor Compra: </label>
+                    <input type="number" step="0.01" placeholder="0.00" name="valor_compra">
+                </div>
+
+                <div class="campo">
+                    <label> Valor Venda: </label>
+                    <input type="number" step="0.01" placeholder="0.00" name="valor_venda">
+                </div>
+
+                <div class="campo campo-estoque">
+                    <label> Qtd. Estoque: </label>
+                    <input type="number" placeholder="0" name="qtd_estoque">
+                </div>
 
             
-            <label> Nome do Produto: </label> <br>
-            <input type="text" placeholder="''goiaba''" name="nome_produto" required>
+                <div class="buttons">
+                    <input type="submit" value="Cadastrar produto" class="btn"> 
+                    <input type="submit" value="Vender produto" class="btn">
+                </div>
             
-            <div class="campo">
-
-            <label> Categoria: </label>
-            <input type="text" placeholder="''alimento''" name="categoria" required>
-            
-            <label> Valor Compra: </label>
-            <input type="number" placeholder="0,00" name="valor_compra" >
-            
-            <label> Valor Venda: </label>
-            <input type="number" placeholder="0,00" name="valor_venda">
-
-            <label> Qtd. Estoque: </label>
-            <input type="number" placeholder="0" name="qtd_estoque"><br>
-
             </div>
-    
-            <input type="submit" value="Cadastrar produto" style="cursor: pointer;"> 
-            <input type="submit" value="Vender produto" style="cursor: pointer;">
+            <br>
 
-            
+            <h2 class="cont_title"> 🤯 Estoque </h2> 
+
+            <div class="campo"> 
+            <table class="table">
+                <thead>
+                <tr>
+                    <th> Descrição </th>
+                    <th> Categoria </th>
+                    <th> Venda </th>
+                    <th> Lucro Unit. </th>
+                    <th> Estoque </th>
+                    <th> Ações </th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
             </div>
-            
-             </fieldset>
+            </fieldset>
         </form>
     </body>
 </html>
