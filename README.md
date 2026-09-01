@@ -6,3 +6,7 @@ Gerenciamento de Estoque com PHP e MYSQL (montar um CRUD funcional)
 - PHP
 - MySQL
 - usbwebserver (sera convertido pra xampp algum dia)
+
+Alunos: 
+- Vinicius Pedro
+- Lucas Tetslaf
